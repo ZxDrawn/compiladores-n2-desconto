@@ -1,0 +1,11 @@
+Experimento com erros propositais. Sao copias dos programas; os arquivos corretos em python/ e javascript/ nao foram alterados.
+
+desconto_erro.py - linha 22: tiramos os dois-pontos do "if"              -> SyntaxError (aparece antes de rodar)
+desconto_erro.js - linha 20: usamos a variavel "desconto", que nao existe -> ReferenceError (aparece rodando, so com valor >= 100)
+
+Para repetir (de dentro da pasta Compiladores):
+  python evidencias/erros/desconto_erro.py 50
+  node evidencias/erros/desconto_erro.js 50
+  node evidencias/erros/desconto_erro.js 100
+
+As mensagens obtidas estao em erro_python.txt e erro_javascript.txt.

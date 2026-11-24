@@ -1,0 +1,56 @@
+[
+  {
+    "caso": "T01",
+    "objetivo": "Compra comum abaixo do limite nao recebe desconto",
+    "condicao": "valor < 100 (situacao usual)",
+    "entrada": "50",
+    "esperado": "50.00",
+    "obtido": "50.00",
+    "situacao": "APROVADO"
+  },
+  {
+    "caso": "T02",
+    "objetivo": "Valor imediatamente abaixo do limite nao recebe desconto",
+    "condicao": "limite inferior: 99.99 < 100",
+    "entrada": "99.99",
+    "esperado": "99.99",
+    "obtido": "99.99",
+    "situacao": "APROVADO"
+  },
+  {
+    "caso": "T03",
+    "objetivo": "Valor exatamente no limite recebe desconto",
+    "condicao": "limite: valor == 100 (regra usa >=)",
+    "entrada": "100",
+    "esperado": "90.00",
+    "obtido": "90.00",
+    "situacao": "APROVADO"
+  },
+  {
+    "caso": "T04",
+    "objetivo": "Compra comum acima do limite recebe 10% de desconto",
+    "condicao": "valor > 100 (situacao usual)",
+    "entrada": "250",
+    "esperado": "225.00",
+    "obtido": "225.00",
+    "situacao": "APROVADO"
+  },
+  {
+    "caso": "T05",
+    "objetivo": "Valor zero e aceito e nao recebe desconto",
+    "condicao": "limite inferior da validade: valor == 0",
+    "entrada": "0",
+    "esperado": "0.00",
+    "obtido": "0.00",
+    "situacao": "APROVADO"
+  },
+  {
+    "caso": "T06",
+    "objetivo": "Valor negativo e rejeitado",
+    "condicao": "entrada invalida: valor < 0",
+    "entrada": "-10",
+    "esperado": "entrada invalida",
+    "obtido": "entrada invalida",
+    "situacao": "APROVADO"
+  }
+]

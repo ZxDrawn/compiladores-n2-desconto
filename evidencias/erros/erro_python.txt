@@ -1,0 +1,5 @@
+> python evidencias\erros\desconto_erro.py 50
+  File "evidencias\erros\desconto_erro.py", line 22
+    if valor >= 100
+                   ^
+SyntaxError: expected ':'

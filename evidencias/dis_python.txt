@@ -1,0 +1,19 @@
+ 20           0 RESUME                   0
+
+ 22           2 LOAD_FAST                0 (valor)
+              4 LOAD_CONST               1 (100)
+              6 COMPARE_OP              92 (>=)
+             10 POP_JUMP_IF_FALSE        8 (to 28)
+
+ 23          12 LOAD_FAST                0 (valor)
+             14 LOAD_FAST                0 (valor)
+             16 LOAD_CONST               2 (0.1)
+             18 BINARY_OP                5 (*)
+             22 BINARY_OP               10 (-)
+             26 STORE_FAST               0 (valor)
+
+ 24     >>   28 LOAD_GLOBAL              1 (NULL + round)
+             38 LOAD_FAST                0 (valor)
+             40 LOAD_CONST               3 (2)
+             42 CALL                     2
+             50 RETURN_VALUE
